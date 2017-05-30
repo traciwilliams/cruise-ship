@@ -3,8 +3,7 @@ body {
 }
 
 #database-results {
-	//width: 100;
+	max-width: 100%;
 	height: 150px;
-	padding: 20px;
-	background-color: grey;
+	background-color: pink;
 }
