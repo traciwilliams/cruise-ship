@@ -8,8 +8,6 @@ body {
 	background-color: pink;
 }
 
-
-
 nav ul {
 	background-color: #595959;
 	color: #ffffff;
@@ -31,3 +29,178 @@ nav a {
 nav a:hover {
 	color: #c1c1c1;
 }
+
+.slide-title {
+	z-index: 100000;
+	font-size: 100px;
+	text-align: left;
+	position: absolute;
+	width: 20%;
+	color: white;
+	padding-top: 100px;
+}
+
+.slider-container {
+	overflow: hidden;
+	height: 350px;
+}
+
+.slider-container figure div {
+	width: 20%;
+	float: left;
+}
+
+.slider-container figure img {
+	width: 100%;
+	float: left;
+}
+
+.slider-container figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation-name: myslider;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes myslider {
+	0% {
+		left: 0%;
+	}
+
+	10% {
+		left: 0%;
+	}
+
+	12% {
+		left: -100%;
+	}
+	22% {
+		left: -100%;
+	}
+	24% {
+		left: -200%;
+	}
+	34% {
+		left: -200%;
+	}
+	36% {
+		left: -300%;
+	}
+	46% {
+		left: -300%;
+	}
+	48% {
+		left: -400%;
+	}
+	58% {
+		left: -400%;
+	}
+	60% {
+		left: -300%;
+	}
+	70% {
+		left: -300%;
+	}
+	72% {
+		left: -200%;
+	}
+	82% {
+		left: -200%;
+	}
+	84% {
+		left: -100%;
+	}
+	94% {
+		left: -100%;
+	}
+	96% {
+		left: 0%;
+	}
+
+form {
+    width: 75%;
+    padding: 2em;
+    background-color: pink;
+    border-radius:0.25em;
+    box-shadow:0 0 2em rgba(0,0,0,0.2)
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+    height: 50vh;
+
+}
+
+input, 
+select {
+    padding: 0.5em;
+    font-size: 0.875em;
+    background: blue;
+    border: 1px solid #ccc;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0;
+    transition:0.5s;
+}
+
+input:focus,
+select:focus {
+    background:#fff;
+    box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
+    outline:0;
+}
+
+
+
+
+.form-field {
+    display: flex;
+    margin-bottom:1em;
+}
+
+.form-field label {
+    flex: 0 1 3em;
+    padding: 1em;
+    background: #ccc;
+    border: 1px solid #fff;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1;
+}
+
+.form-field input,
+.form-field select {
+    flex: 1;
+}
+
+.submitButton {
+    flex-direction:row-reverse;
+   
+
+}
+
+
+input[type="submit"] {
+    flex: 0 1 40%;
+    padding: 0.5em;
+    font-size: 1rem;
+    text-shadow: 0 1px 0 #fff;
+    background: #b0e35a;
+    border-radius: 0.25em;
+    border: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    color:#fff;
+    background:#cc3f85;
+    text-shadow:0 1px 0 #000;
+}
+
+
