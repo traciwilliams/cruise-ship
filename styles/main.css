@@ -1,3 +1,22 @@
+/*========================*/
+/*BASIC SETUP*/
+/*========================*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fff;
+	color: #555;
+	font-family: "Lato", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
 body {
 	background-color: green;
 }
@@ -8,7 +27,12 @@ body {
 	background-color: pink;
 }
 
-nav ul {
+
+/*========================*/
+/*NAVIGATION*/
+/*========================*/
+
+.main-nav  {
 	background-color: #595959;
 	color: #ffffff;
 	list-style: none;
@@ -16,19 +40,28 @@ nav ul {
 	padding: 20px 0 20px 0;
 }
 
-nav li {
+.main-nav li {
 	display: inline-block;
 	padding-right: 50px;
 }
 
-nav a {
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
 	text-decoration: none;
-	color: white;
+	text-transform: uppercase;
+	font-size: 80%;
+	transition: color 2s;
 }
 
-nav a:hover {
-	color: #c1c1c1;
+.main-nav li a:hover,
+.main-nav li a:active {
+	color: black;
 }
+
+
+
 
 .slide-title {
 	z-index: 100000;
