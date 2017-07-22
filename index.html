@@ -4,7 +4,7 @@
 	<title>Cruise Ship</title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/myframework.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/grid.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -14,64 +14,83 @@
 <body>
 
 	<div class="grid">
-		<header>
-			<nav>
+
+
+	<header>	
+		<nav>
+		<div class="row">
 				<ul class="main-nav">
 					<li><a href="#">Find a Cruise</a></li>
-					<li><a href="#">Logo</a></li>
+					<li><a href="#">--CC--</a></li>
 					<li><a href="#">Contact Us</a></li>
 				</ul>
-			</nav>
-		</header>
+			</div>	
+		</nav>
+		<div class="hero-text-box">
+			<h1>Carolina Cruises</h1>
+		</div>
+
+		<div class="slider-container">
+			<figure>
+				<div class="slide">
+					<img src="styles/images/cruise1-1.jpg">
+				</div>
+				<div class="slide">
+					<img src="styles/images/cruise2.jpg">
+				</div>
+				<div class="slide">
+					<img src="styles/images/cruise3.jpg">
+				</div>
+				<div class="slide">
+					<img src="styles/images/cruise2.jpg">
+				</div>	
+				<div class="slide">
+					<img src="styles/images/cruise5.jpg">
+				</div>
+			</figure>	
+		</div>
+	</header>
 
 
 
 	
-		<div class="slider-container">
-			<figure>
-				<div class="slide">
-					<p class="slider-title">Slide 1</p>
-					<img src="styles/images/ship1.png">
-				</div>
-				<div class="slide">
-					<p class="slider-title">Slide 2</p>
-					<img src="styles/images/ship2.png">
-				</div>
-				<div class="slide">
-					<p class="slider-title">Slide 3</p>
-					<img src="styles/images/ship3.png">
-				</div>
-				<div class="slide">
-					<p class="slider-title">Slide 4</p>
-					<img src="styles/images/ship2.png">
-				</div>	
-				<div class="slide">
-					<p class="slider-title">Slide 5</p>
-					<img src="styles/images/ship1.png">
-				</div>
-			</figure>	
+		
+
+
+	<section class="database-section">
+		<div class="row">	
+			<h2>Check our Database for Cruises</h2>
+			<form>
+				<input type="text" placeholder="month/year"/>
+				<input type="text" placeholder="destination"/>
+				<input type="text" placeholder="depart"/>
+				<input type="text" placeholder="length"/>
+				<input type="text" placeholder="view results"/>
+			</form>
+		</div>		
+
+		<h2 class="database-results-title">Database Results</h2>
+		<div class="database-results-box"></div>
+	</section>
+
+
+
+	<section class="testimonial-section">
+		<h1>Here's What People Are Saying</h1>
+		<div class="testimonials">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisl id justo interdum blandit sed et velit. Proin dictum, ex vitae sagittis dignissim, mauris lacus commodo velit, non hendrerit sem diam eget urna. Ut dolor velit, tristique et interdum nec, egestas alique</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisl id justo interdum blandit sed et velit. Proin dictum, ex vitae sagittis dignissim, mauris lacus commodo velit, non hendrerit sem diam eget urna. Ut dolor velit, tristique et interdum nec, egestas alique</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisl id justo interdum blandit sed et velit. Proin dictum, ex vitae sagittis dignissim, mauris lacus commodo velit, non hendrerit sem diam eget urna. Ut dolor velit, tristique et interdum nec, egestas alique</p>
+			
 		</div>
 
 
 
+	</section>	
 
 
 
-
-
-
-
-
-		<form>
-			<input type="text" placeholder="month/year"/>
-			<input type="text" placeholder="destination"/>
-			<input type="text" placeholder="depart"/>
-			<input type="text" placeholder="length"/>
-			<input type="text" placeholder="view results"/>
-		</form>
-
-		<div class="col-12" id="database-results">Database Results</div>
-
+	<section class="form-section">
 	
 	<h1>Create your Profile for future cruises<br>Add full form options- whole shebang</h1>
 	<div class="form-container">	
@@ -235,14 +254,7 @@
 					<option value="Washington">Washington</option>
 					<option value="West Virginia">West Virginia</option>
 					<option value="Wisconsin">Wisconsin</option>
-					<option value="Wyoming">Wyoming</option>
-
-
-
-
-
-
-					
+					<option value="Wyoming">Wyoming</optio	
 				</select>
 			</div>
 
@@ -265,7 +277,8 @@
 
 			<p>By submitting this form, you are granting us permission to email you. You may unsubscribe via the link found at the bottom of every email. (See our Email Privacy Policy for details.) </p>
 		</div><!--form-container-->	
-
+	</form>
+</section>		
 
 
 	<footer>created by Traci Williams</footer>

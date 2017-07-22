@@ -17,12 +17,6 @@ img {
     height: auto;
 }
 
-.grid {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: grey; 
-  }
 
 
 .row {
